@@ -7,7 +7,7 @@ var showingX;
 window.onload = function() {
 	for(var i = 0; i < elementIds.length; i++){
 			$(elementIds[i]).observe("mouseover", addX);
-			$(elementIds[i].observe("mouseout", removeX);
+			$(elementIds[i]).observe("mouseout", removeX);
 	}
 }
 
@@ -54,4 +54,5 @@ function hideDivElement()
 
 function hideDivParentElement(){
 	currentElement.hide();
+	showingX = false;
 }
