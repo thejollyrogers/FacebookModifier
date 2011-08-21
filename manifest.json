@@ -7,10 +7,10 @@
     "default_title": "Edit your Facebook",
     "default_popup": "popup.html"
   },
-  "content_scripts": {[
-    {
+  "content_scripts": [
+  {
       "matches": ["http://www.facebook.com/*"],
       "js": ["js/prototype.js", "js/main.js"]
     }
-  ]}
+  }]
 }
