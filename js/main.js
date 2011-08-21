@@ -10,6 +10,7 @@ window.onload = function() {
 }
 
 function addX(){
+	alert("supposed to be adding x");
 	currentElement = this;
 	var xElement = $(document.createElement("div"));
 	xElement.addClassName("xbox");
