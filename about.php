@@ -1,6 +1,5 @@
 <?php
 	include("common.php");
-	top("About securmount, Company Message");
 	?>
 	<div id="about">
         <h1>Advanced</h1>
