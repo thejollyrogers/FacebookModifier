@@ -3,12 +3,13 @@
 
 .xbox 
 {
-	background-image: url("../img/xbox.png");
+	background-image: url("img/xbox.png");
 	float:right;
+	margin-right:1em;
 }
 
 .xbox .mouseoverxbox
 {
-	background-image:url("../img/xbox_over.png");
+	background-image:url("img/xbox_over.png");
 	color:green;
 }
