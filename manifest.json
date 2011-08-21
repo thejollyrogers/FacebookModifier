@@ -2,10 +2,8 @@
   "name": "FacebookModifier",
   "version": "1.0",
   "description": "Change your FaceBook layout. Delete and rearrange elements on your FaceBook page.",
-  "page_action": {
-    "default_icon": "fblogo.jpg",
-    "default_title": "Edit your Facebook",
-    "default_popup": "popup.html"
+  "browser_action": {
+    "default_icon": "icon.png"
   },
   "content_scripts": [
   {
