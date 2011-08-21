@@ -2,25 +2,31 @@
 
 var elementIds = new Array("pagelet_welcome_box", "pinnedNav", "appsNav", "groupsNav", "pagesNav");
 var currentElement;
+var showingX;
 
 window.onload = function() {
 	for(var i = 0; i < elementIds.length; i++){
-		$(elementIds[i]).observe("mousemove", addX);	
+			$(elementIds[i]).observe("mouseover", addX);
 	}
 }
 
 function addX(){
-	currentElement = this;
-	var xElement = $(document.createElement("div"));
-	xElement.addClassName("xbox");
-	xElement.observe("mousemove", addMouseOver);
-	xElement.observe("mouseout", removeMouseOver);
-	xElement.observe("click", hideDivParentElement);
-	this.appendChild(xElement);
+	if(!showingX)
+	{
+		showingX = true;
+		currentElement = this;
+		var xElement = $(document.createElement("div"));
+		xElement.addClassName("xbox");
+		xElement.observe("mouseover", addMouseOver);
+		xElement.observe("mouseout", removeMouseOver);
+		xElement.observe("click", hideDivParentElement);
+		xElement.innerHTML = ":)";
+		this.appendChild(xElement);
+	}
 }
 
 function removeMouseOver(){
-	this.removeClassName("mouseoverxbox");	
+	this.removeClassName("mouseoverxbox");
 }
 
 function addMouseOver(){
@@ -29,6 +35,7 @@ function addMouseOver(){
 
 function hideDivElement()
 {
+	showingX = false;
 	this.hide();
 }
 
