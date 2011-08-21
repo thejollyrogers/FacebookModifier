@@ -4,10 +4,7 @@
 .xbox 
 {
 	background-image: url("../img/xbox.png");
-	position:relative;
-	right:10px;
-	top:10px;
-	color:red;
+	float:right;
 }
 
 .xbox .mouseoverxbox

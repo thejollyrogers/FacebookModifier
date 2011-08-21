@@ -27,15 +27,8 @@ function addX(){
 }
 
 function removeX(){
-	this.removeNode(get_lastchild(this));	
-}
-
-function get_lastchild(n) {
-	var last = n.lastChild;
-	while (last.nodeType!=1){
-		last = last.previousSibling;
-	}
-	return last;
+	this.lastChild.remove();
+	showingX = false;	
 }
 
 function removeMouseOver(){
