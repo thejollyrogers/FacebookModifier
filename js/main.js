@@ -4,7 +4,7 @@ var elementIds = new Array("pagelet_welcome_box", "pinnedNav", "appsNav", "group
 
 window.onload = function() {
 	for(var i = 0; i < elementIds.length; i++){
-		$(elementIds[i]).observe("mouseover", hideDivElement);	
+		$(elementIds[i]).observe("mousemove", hideDivElement);	
 	}
 }
 
