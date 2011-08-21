@@ -3,7 +3,7 @@
   "version": "1.0",
   "description": "Change your FaceBook layout. Delete and rearrange elements on your FaceBook page.",
   "page_action": {
-    "default_icon": "fblogo.jpeg",
+    "default_icon": "fblogo.jpg",
     "default_title": "Edit your Facebook",
     "default_popup": "popup.html"
   },
@@ -11,6 +11,5 @@
   {
       "matches": ["http://www.facebook.com/*"],
       "js": ["js/prototype.js", "js/main.js"]
-    }
   }]
 }
