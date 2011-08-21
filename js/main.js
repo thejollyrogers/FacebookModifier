@@ -22,12 +22,12 @@ function addX(){
 		xElement.observe("mouseout", removeMouseOver);
 		xElement.observe("click", hideDivParentElement);
 		xElement.innerHTML = ":)";
-		this.appendChild(xElement);
+		this.insertBefore(xElement, this.firstChilds);
 	}
 }
 
 function removeX(){
-	this.lastChild.remove();
+	this.firstChild.remove();
 	showingX = false;	
 }
 
